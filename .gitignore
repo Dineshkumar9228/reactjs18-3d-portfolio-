@@ -29,3 +29,15 @@ dist-ssr
 # env
 .env
 
+
+# dependencies
+node_modules/
+
+# build
+dist/
+
+# environment variables
+.env
+
+# editor configs
+.vscode/
