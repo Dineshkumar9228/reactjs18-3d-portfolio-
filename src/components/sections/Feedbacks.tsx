@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { styles } from "../../constants/styles";
 import { fadeIn } from "../../utils/motion";
-import { Header } from "../atoms/Header";
+
 
 // 🎓 Certifications Data
 const certifications = [
