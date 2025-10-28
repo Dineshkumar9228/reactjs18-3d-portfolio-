@@ -3,7 +3,6 @@ import type {
   TService,
   TTechnology,
   TExperience,
-  TTestimonial,
   TProject,
 } from "../types";
 
@@ -24,16 +23,12 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
-  tripguide,
   threejs,
 } from "../assets";
 
+// 🌐 Navigation Links
 export const navLinks: TNavLink[] = [
   {
     id: "about",
@@ -44,30 +39,36 @@ export const navLinks: TNavLink[] = [
     title: "Work",
   },
   {
+    id: "certifications",
+    title: "Certifications",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
 ];
 
+// 💼 Services / Roles
 const services: TService[] = [
   {
-    title: "Web Developer",
+    title: "Frontend Web Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "React Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "UI/UX Designer",
+    icon: figma,
   },
   {
-    title: "Content Creator",
+    title: "Full Stack Developer",
     icon: creator,
   },
 ];
 
+// 🧠 Technologies
 const technologies: TTechnology[] = [
   {
     name: "HTML 5",
@@ -110,165 +111,134 @@ const technologies: TTechnology[] = [
     icon: threejs,
   },
   {
-    name: "git",
+    name: "Git & GitHub",
     icon: git,
   },
   {
-    name: "figma",
+    name: "Figma",
     icon: figma,
   },
   {
-    name: "docker",
+    name: "Docker",
     icon: docker,
   },
 ];
 
+// 🧩 Experiences
 const experiences: TExperience[] = [
-  {
-    title: "React.js Developer",
-    companyName: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    companyName: "Tesla",
-    icon: tesla,
+
+   {
+    title: "Java Intern",
+    companyName: "Wavtech Solutions",
+    icon: backend,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed basic CRUD operations using Java and MySQL.",
+      "Assisted in building small-scale desktop applications and backend logic.",
+      "Improved understanding of object-oriented programming concepts.",
+      "Worked with mentors to understand software development lifecycle (SDLC).",
     ],
   },
   {
-    title: "Web Developer",
-    companyName: "Shopify",
-    icon: shopify,
+    title: "UI/UX Design Intern",
+    companyName: "Greensoft Group Technologies",
+    icon: figma,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "May 2025 – June 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designed responsive user interfaces using Figma and Adobe XD.",
+      "Worked on real-time client projects, focusing on UX research, wireframing, and prototyping.",
+      "Collaborated with the development team to ensure design-to-code accuracy.",
+      "Learned modern web design trends and applied user-centered design principles.",
     ],
   },
+ 
   {
-    title: "Full stack Developer",
-    companyName: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "Freelance Full Stack Developer",
+    companyName: "Self-employed",
+    icon: web,
+    iconBg: "#383E56",
+    date: "2025 – Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designed and developed modern responsive websites using React and Tailwind CSS.",
+      "Created dynamic 3D portfolio experiences using Three.js and Framer Motion.",
+      "Built small-scale web apps with clean UI and smooth interactions.",
+      "Collaborated with clients to translate ideas into interactive digital experiences.",
     ],
   },
 ];
 
-const testimonials: TTestimonial[] = [
+// 🏅 Certifications Section (Replaces Testimonials)
+const certifications = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    title: "AWS Cloud Certification",
+    issuer: "GUVI",
+    year: "2025",
+    description:
+      "Completed AWS Cloud certification from GUVI and learned about EC2, S3, Route 53, and IAM services.",
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    title: "Mastering Figma Basics in UI Design",
+    issuer: "GUVI",
+    year: "2024",
+    description:
+      "Gained expertise in wireframing, prototyping, and user interface design fundamentals using Figma.",
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    title: "Diploma in Computer Applications",
+    issuer: "Apollo Computer Education",
+    year: "2019",
+    description:
+      "Covered computer fundamentals, MS Office, and programming basics through a diploma program.",
   },
 ];
 
+// 🚀 Projects
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "College ERP UI Design",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A complete UI/UX design for college ERP using Figma, including dashboards, student management, and analytics screens.",
     tags: [
       {
-        name: "react",
+        name: "figma",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "uiux",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "designsystem",
         color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink:
+      "https://www.figma.com/proto/hPL6kjm0JgDAxfGyJ2dKaY/erp?node-id=1-4&p=f&t=gA9GC3urSDBj90rD-1",
   },
   {
-    name: "Job IT",
+    name: "3D Portfolio Website",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Developed a 3D interactive portfolio using React, Three.js, and Tailwind CSS to showcase my projects and skills with smooth animations and modern design.",
     tags: [
       {
         name: "react",
-        color: "blue-text-gradient",
+        color: "pink-text-gradient",
       },
       {
-        name: "restapi",
+        name: "threejs",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
-        color: "pink-text-gradient",
+        name: "tailwindcss",
+        color: "blue-text-gradient",
       },
     ],
     image: jobit,
-    sourceCodeLink: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "https://github.com/Dineshkumar9228/3d-portfolio",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, certifications, projects };

@@ -40,26 +40,31 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "John Doe — 3D Portfolio",
-    fullName: "John Doe",
-    email: "johndoe@mail.com",
+    title: "Dineshkumar — UI/UX Designer & Web Developer Portfolio",
+    fullName: "DINESHKUMAR R",
+    email: "dineshjstudio@gmail.com",
   },
   hero: {
-    name: "John Doe",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
+    name: "Dineshkumar",
+    p: [
+      "I developed 3D Portfolio.",
+    ],
   },
   contact: {
     p: "Get in touch",
-    h2: "Contact.",
+    h2: "Contact Me.",
     form: {
       name: {
         span: "Your Name",
         placeholder: "What's your name?",
       },
-      email: { span: "Your Email", placeholder: "What's your email?" },
+      email: {
+        span: "Your Email",
+        placeholder: "What's your email?",
+      },
       message: {
         span: "Your Message",
-        placeholder: "What do you want to say?",
+        placeholder: "What would you like to share?",
       },
     },
   },
@@ -67,28 +72,38 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
+      content: `I'm a passionate UI/UX Designer and Web Developer skilled in creating 
+      responsive, user-friendly web interfaces and design systems. I specialize 
+      in tools like Figma, Adobe XD, and technologies such as HTML, CSS, 
+      JavaScript, and React. My focus is on designing intuitive user experiences 
+      and building clean, maintainable front-end code.`,
     },
     experience: {
       p: "What I have done so far",
-      h2: "Work Experience.",
+      h2: "Experience.",
+      content: `I've worked as a UI/UX Design Intern at Greensoft Groups, where I 
+      designed responsive prototypes and collaborated with developers to bring 
+      them to life. Previously, as a Java Intern at Wavtech Solutions, I built 
+      backend logic using Core Java and practiced object-oriented programming.`,
     },
     feedbacks: {
       p: "What others say",
       h2: "Testimonials.",
     },
     works: {
-      p: "My work",
+      p: "My Work",
       h2: "Projects.",
-      content: `Following projects showcases my skills and experience through
-    real-world examples of my work. Each project is briefly described with
-    links to code repositories and live demos in it. It reflects my
-    ability to solve complex problems, work with different technologies,
-    and manage projects effectively.`,
+      content: `Here are a few of my featured projects that showcase my design and 
+      development skills:
+
+      • College ERP UI Design – Created intuitive dashboards for Admin, Student, 
+      and Faculty portals using Figma components.
+
+      • AP-SSDC Website Redesign – Revamped the Andhra Pradesh Skill Development 
+      portal with a mobile-first, accessible design.
+
+      • Online Bike Accessories Management System – Built a full-stack inventory 
+      management web app using PHP, MySQL, HTML, and CSS.`,
     },
   },
 };
