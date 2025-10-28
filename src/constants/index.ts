@@ -237,7 +237,7 @@ const projects: TProject[] = [
       },
     ],
     image: jobit,
-    sourceCodeLink: "https://github.com/Dineshkumar9228/3d-portfolio",
+    sourceCodeLink: "https://reactjs18-3d-portfolio-j4kc.vercel.app/#certificationss",
   },
 ];
 
