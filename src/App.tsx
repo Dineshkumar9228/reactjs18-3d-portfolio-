@@ -1,4 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
+import { useEffect } from "react";
 
 import {
   About,
@@ -7,11 +8,9 @@ import {
   Feedbacks,
   Hero,
   Navbar,
-  Tech,
   Works,
   StarsCanvas,
 } from "./components";
-import { useEffect } from "react";
 import { config } from "./constants/config";
 
 const App = () => {
@@ -30,7 +29,7 @@ const App = () => {
         </div>
         <About />
         <Experience />
-        <Tech />
+        {/* Removed Tech Section */}
         <Works />
         <Feedbacks />
         <div className="relative z-0">
