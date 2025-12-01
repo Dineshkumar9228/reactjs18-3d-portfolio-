@@ -26,6 +26,7 @@ import {
   carrent,
   jobit,
   threejs,
+  tripguide,
 } from "../assets";
 
 // 🌐 Navigation Links
@@ -128,13 +129,13 @@ const technologies: TTechnology[] = [
 const experiences: TExperience[] = [
 
    {
-    title: "Java Intern",
+    title: "Python Intern",
     companyName: "Wavtech Solutions",
     icon: backend,
     iconBg: "#E6DEDD",
     date: "2024",
     points: [
-      "Developed basic CRUD operations using Java and MySQL.",
+      "Developed basic CRUD operations using Python and MySQL.",
       "Assisted in building small-scale desktop applications and backend logic.",
       "Improved understanding of object-oriented programming concepts.",
       "Worked with mentors to understand software development lifecycle (SDLC).",
@@ -239,6 +240,20 @@ const projects: TProject[] = [
     image: jobit,
     sourceCodeLink: "https://reactjs18-3d-portfolio-j4kc.vercel.app/#certificationss",
   },
+ {
+  name: "E-Attendance System",
+  description:
+    "Built a modern attendance management system using Next.js, Firebase, and Tailwind CSS. Features include secure authentication, teacher and student dashboards, real-time attendance tracking, and responsive UI.",
+  tags: [
+    { name: "nextjs", color: "blue-text-gradient" },
+    { name: "firebase", color: "orange-text-gradient" },
+    { name: "tailwindcss", color: "green-text-gradient" },
+  ],
+  image: tripguide,
+  sourceCodeLink: "https://your-attendance-app.vercel.app/",
+},
+
+
 ];
 
 export { services, technologies, experiences, certifications, projects };
