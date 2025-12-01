@@ -250,7 +250,7 @@ const projects: TProject[] = [
     { name: "tailwindcss", color: "green-text-gradient" },
   ],
   image: tripguide,
-  sourceCodeLink: "https://your-attendance-app.vercel.app/",
+  sourceCodeLink: "https://e-attendance-system-silk.vercel.app/",
 },
 
 
